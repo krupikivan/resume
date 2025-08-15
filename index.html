@@ -26,6 +26,26 @@
             margin-bottom: 20px;
             border-bottom: 2px solid #333;
             padding-bottom: 10px;
+            position: relative;
+        }
+
+        .download-btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #2196f3;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background-color: #1976d2;
         }
 
         .name {
@@ -169,18 +189,24 @@
 
         @media print {
             body {
-                margin: 0;
-                padding: 0.3in;
+                margin: 0 auto;
+                padding: 0.5in;
+                max-width: 8.5in;
             }
             
             .section {
                 margin-bottom: 12px;
+            }
+
+            .download-btn {
+                display: none;
             }
         }
     </style>
 </head>
 <body>
     <div class="header">
+        <button class="download-btn" onclick="downloadPDF()">📄 Download PDF</button>
         <div class="name">IVAN KRUPIK</div>
         <div class="contact">krupikivan@gmail.com • Silver Spring, MD<br>
         LinkedIn: <a href="https://linkedin.com/in/krupikivan">linkedin.com/in/krupikivan</a> • GitHub: <a href="https://github.com/krupikivan">github.com/krupikivan</a><br>
@@ -309,5 +335,11 @@
             <div class="year">2012 - 2018</div>
         </div>
     </div>
+
+    <script>
+        function downloadPDF() {
+            window.print();
+        }
+    </script>
 </body>
 </html>
