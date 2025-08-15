@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan Krupik - Senior Software Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.4;
+            color: #333;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+            background: white;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        .contact {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .contact a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: bold;
+            border-bottom: 1px solid #333;
+            margin-bottom: 8px;
+            padding-bottom: 2px;
+        }
+
+        .experience-item {
+            margin-bottom: 12px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 3px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .location-date {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .company {
+            font-style: italic;
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 4px;
+        }
+
+        .achievements {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .achievements li {
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 3px;
+            font-size: 12px;
+            line-height: 1.3;
+        }
+
+        .achievements li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #333;
+        }
+
+        .highlight {
+            background-color: #ffeb3b;
+            padding: 0 2px;
+        }
+
+        .metric {
+            background-color: #4caf50;
+            color: white;
+            padding: 0 3px;
+            border-radius: 2px;
+            font-weight: bold;
+        }
+
+        .tech {
+            background-color: #2196f3;
+            color: white;
+            padding: 0 3px;
+            border-radius: 2px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            font-size: 12px;
+        }
+
+        .skill-category {
+            margin-bottom: 8px;
+        }
+
+        .skill-title {
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        .education-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .degree {
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .university {
+            font-size: 12px;
+            color: #555;
+        }
+
+        .year {
+            font-size: 12px;
+            color: #666;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+                padding: 0.3in;
+            }
+            
+            .section {
+                margin-bottom: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="name">IVAN KRUPIK</div>
+        <div class="contact">786.770.0263 • krupikivan@gmail.com • Silver Spring, MD<br>
+        LinkedIn: <a href="https://linkedin.com/in/krupikivan">linkedin.com/in/krupikivan</a> • GitHub: <a href="https://github.com/krupikivan">github.com/krupikivan</a><br>
+        Portfolio: <a href="https://krupikivan.github.io/ivan-krupik-portfolio/">krupikivan.github.io/ivan-krupik-portfolio</a></div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Work Experience</div>
+        
+        <div class="experience-item">
+            <div class="job-header">
+                <div class="job-title">Senior Software Engineer</div>
+                <div class="location-date">Remote, US<br>Aug 2023 - Jul 2025</div>
+            </div>
+            <div class="company">Babyscripts - Healthcare technology for maternal care</div>
+            <ul class="achievements">
+                <li>Contributed to <span class="highlight">database migration</span> from <span class="tech">DynamoDB</span> to <span class="tech">PostgreSQL Aurora RDS</span> using <span class="tech">ConfigCat feature flags</span> for zero-downtime deployment</li>
+                <li>Leveraged <span class="tech">AI/LLM tools</span> including <span class="tech">GitHub Co-Pilot and Claude</span> to <span class="highlight">accelerate development cycles by 40%</span> and reduce boilerplate code</li>
+                <li>Developed <span class="tech">IoT device integrations</span> for blood pressure monitors using <span class="tech">Objective-C</span> and <span class="tech">Java</span> bridge code with <span class="tech">Flutter</span> mobile apps</li>
+                <li>Implemented comprehensive internationalization using <span class="tech">Lokalise</span> across <span class="tech">Flutter</span> and <span class="tech">Angular</span> platforms for multi-language patient content delivery</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <div class="job-title">Technical Lead</div>
+                <div class="location-date">Argentina<br>Aug 2021 - Aug 2024</div>
+            </div>
+            <div class="company">MascotaMas - Pet service marketplace platform</div>
+            <ul class="achievements">
+                <li>Led complete architecture and development of pet service platform from scratch, achieving <span class="metric">4,000+ weekly active users</span> with <span class="highlight">paid subscriptions</span></li>
+                <li>Built full-stack solution using <span class="tech">Flutter</span> mobile apps and <span class="tech">React TypeScript</span> web platform with <span class="tech">Ruby on Rails</span> backend and <span class="tech">Firebase</span> database</li>
+                <li>Integrated <span class="tech">Zoom SDK</span> and <span class="tech">Stripe payment processing</span> in backend, plus <span class="tech">Google Fit/Apple Health APIs</span> for health data synchronization</li>
+                <li>Implemented <span class="tech">CodeMagic CI/CD</span> for mobile deployment and <span class="tech">Docker containerization</span> while mentoring junior developer throughout project lifecycle</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <div class="job-title">Senior Software Engineer</div>
+                <div class="location-date">Remote, US<br>Feb 2022 - Feb 2024</div>
+            </div>
+            <div class="company">IUNU - AI-powered greenhouse management platform</div>
+            <ul class="achievements">
+                <li>Led development of <span class="tech">Flutter</span> mobile application for greenhouse inventory tracking and harvest weight capture with <span class="highlight">hardware integration</span></li>
+                <li>Contributed to <span class="highlight">LUNA AI platform</span> development using <span class="tech">Ruby on Rails</span> for autonomous machine vision and plant-level data analysis</li>
+                <li>Implemented <span class="tech">CircleCI</span> deployment pipelines and <span class="tech">Docker containers</span> on <span class="tech">Google Cloud Platform</span> for scalable greenhouse operations</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <div class="job-title">Senior Software Engineer</div>
+                <div class="location-date">Remote<br>May 2020 - May 2023</div>
+            </div>
+            <div class="company">42i - Full-stack development across multiple projects</div>
+            <ul class="achievements">
+                <li>Led <span class="highlight">Alto Fitness Marketplace</span> development with <span class="tech">Flutter/Ruby on Rails</span>, implementing <span class="tech">Zoom SDK</span> and <span class="tech">Stripe</span> integration</li>
+                <li>Contributed to <span class="highlight">FITCHIN Gaming Platform</span> backend architecture using <span class="tech">Spring Boot with Kotlin</span> for blockchain-based gaming solutions</li>
+                <li>Helped develop <span class="highlight">MODO App</span> (Argentina's Zelle) using <span class="tech">Flutter</span> for secure peer-to-peer financial transactions</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <div class="job-title">Software Engineer</div>
+                <div class="location-date">Argentina<br>Jun 2017 - May 2021</div>
+            </div>
+            <div class="company">Incluit - Mobile development and QA automation</div>
+            <ul class="achievements">
+                <li>Developed <span class="tech">Android applications</span> using <span class="tech">Java/Kotlin</span> for insurance and banking clients including <span class="highlight">Sancor Seguros</span> and <span class="highlight">Banco Supervielle</span></li>
+                <li>Implemented comprehensive <span class="tech">QA automation frameworks</span> using <span class="tech">Python, Java, Robot Framework</span> reducing <span class="metric">manual testing time by 60%</span></li>
+                <li>Contributed to <span class="highlight">MODO app development</span> using <span class="tech">Flutter</span> for cross-platform mobile payment solutions</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <div class="skill-title">Frontend:</div>
+                Flutter, React, Angular, TypeScript, JavaScript
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Backend:</div>
+                Node.js, Python, Ruby on Rails, Spring Boot, Kotlin
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Databases:</div>
+                PostgreSQL, MongoDB, DynamoDB, Firebase
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Cloud & DevOps:</div>
+                AWS, GCP, Docker, CircleCI, CodeMagic, Terraform
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">AI/ML:</div>
+                LangChain, Claude, OpenAI APIs, Django, Celery
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Integration:</div>
+                REST/GraphQL APIs, Stripe, Zoom SDK, IoT Devices
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Current Projects</div>
+        <div class="experience-item">
+            <div class="job-title">AI Content Generation Platform</div>
+            <ul class="achievements">
+                <li>Building <span class="tech">Django</span> application with <span class="tech">LangChain</span> and <span class="tech">Anthropic Claude</span> for automated LinkedIn/Instagram content generation</li>
+                <li>Implementing <span class="tech">Celery</span> background jobs and <span class="tech">Fal AI</span> for image generation with optimized social media workflows</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Education</div>
+        <div class="education-item">
+            <div>
+                <div class="degree">Bachelor of Science in Information Systems Engineering</div>
+                <div class="university">National Technological University</div>
+            </div>
+            <div class="year">2012 - 2018</div>
+        </div>
+    </div>
+</body>
+</html>
